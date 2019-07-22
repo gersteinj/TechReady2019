@@ -1,19 +1,3 @@
-## Outline
-* Welcome:
-  * Introduce self
-  * Set behavioral expectations
-  * Explain structure of two week session
-  * Introduce maker mindset
-* Survey of existing knowledge and desired knowledge
-* NSA: Computational thinking. Students will write out directions for a simple task and have a partner follow the directions. No explanations or editing. Follow exactly (except safety issues).
-* NSA Review: What problems did you have? Were there decisions to be made? How were those decisions evaluated? Did your 'robot' use outside info at all? Did they affect their environment at all?
-* Intro to coding: What is coding (clear, highly structured directions)?
-* First circuit and code: blink
-* Explain blink code and circuit
-* Hack blink code and circuit
-* Exit ticket: Name one thing you learned, one question you want answered
-
----
 # Welcome
 +++
 ## Introductions
@@ -30,33 +14,33 @@
 * Clean up your work space
 * Challenge yourself every day
 * If you need to use the restroom, let me know
+---
+# What we'll be doing
 +++
-## What we'll be doing
-* Daily:
-  * Non-computer activity
-  * Learn about coding and electronics
-  * Discuss connections to [UNSDGs](https://www.un.org/development/desa/disabilities/envision2030.html)
-  * Work towards capstone project
-* Week 1:
-  * Background knowledge for Arduino
-  * Start planning capstone project
-* Week 2:
-  * Continue building Arduino skills
-  * Breakout sessions for additional skills
-  * Work on capstone project
-  * Present capstone
+## Daily
+* Non-computer activity
+* Learn about coding and electronics
+* Discuss connections to [UNSDGs](https://www.un.org/development/desa/disabilities/envision2030.html)
+* Work towards capstone project
 +++
+## Week 1:
+* Background knowledge for Arduino
+* Start planning capstone project
+* Mentor meeting
++++
+## Week 2:
+* Continue building Arduino skills
+* Breakout sessions for additional skills
+* Work on capstone project
+* Mentor meeting
+* Present capstone
+---
 ## Maker Mindset
 
 * Challenge yourself
 * Learn from your mistakes
 * Remember that you can shape your own world
----
-## Survey
-
-I want to know more about your experience level
-https://docs.google.com/forms/d/e/1FAIpQLSdhMRsbCyKeCVT7SU2JXZ3pZU89SK3aXN-3IaaTvlKdZpYpbQ/viewform?usp=sf_link
-
+---?survey=https://docs.google.com/forms/d/e/1FAIpQLSdhMRsbCyKeCVT7SU2JXZ3pZU89SK3aXN-3IaaTvlKdZpYpbQ/viewform?usp=sf_link
 ---
 # Computational Thinking
 +++
@@ -81,22 +65,18 @@ Take turns with your partner, following each other's directions as literally as 
 ---
 ## Review
 
-* Did your partner succeed in following your directions?
-* What went well?
-* What could have been better?
+* Did your partner do what you intended?
 * Did your partner have to make any decisions? How?
 * Did your partner use any external information, such as the location of chairs?
 * How could your directions have been written more effectively?
 * Did your partner affect their environment at all?
 * Did other people affect your partner's ability to carry out the task?
-
 ---
 ## Coding
 
 * A precise, repeatable set of directions for a computer to follow
 * Programming languages are more precise than human languages
 * Many languages exist, but core concepts are the same for all
-
 ---
 # Arduino
 +++
@@ -112,19 +92,39 @@ Take turns with your partner, following each other's directions as literally as 
 * *Microcontroller* with additional electronics to make it easy to use
 * Many variants exist
 * Designed to make it easy to control *inputs* and *outputs*
-
 ---
 # Blink!
 
 Blink is the "Hello World" of Arduino - it's nearly everybody's first program
++++?image=assets/img/Day01/blinkcircuit.PNG&size=contain
++++?image=assets/img/Day01/blinkcircuit.PNG&opacity=30&size=contain
+@snap[north-west text-left]
+## Troubleshooting
+@snapend
+@snap[west text-left span-50]
+<ul>
+<li>Long leg of LED is on the left</li>
+<li> Resistor is orange-orange-brown-gold</li>
+<li> Make sure you didn't mix up your wires</li>
+</ul>
+@snapend
 +++
-Create the circuit shown below
+@snap[west text-left span-40]
+## Arduino IDE
+<ul>
+    <li>Compile</li>
+    <li>Upload</li>
+    <li>New</li>
+    <li>Open</li>
+    <li>Save</li>
+</ul>
+@snapend
 
-!!Image of circuit!!
-
+@snap[east span-60]
+![](assets\img\Day01\arduinoIDE.PNG)
+@snapend
 +++
-* Open the Arduino *IDE*
-* Type in the following code:
+Save and upload to your Arduino. What happens?
 ```
 // Declare and initialize a variable
 const int ledPin = 13;
@@ -141,7 +141,6 @@ void loop(){
   digitalWrite(ledPin, HIGH);
 }
 ```
-* Try uploading your code to the Arduino. What happens?
 +++
 How do you think we could make the LED turn off? Try adding a line to do it
 +++
@@ -165,7 +164,7 @@ void loop(){
 +++
 Is it behaving as you'd expect? Why/why not?
 +++
-* The Arduino can turn things on and off faster than we can see, so we need to delay
+The Arduino can turn things on and off faster than we can see, so we need to delay
 
 ```
 // Declare and initialize a variable
