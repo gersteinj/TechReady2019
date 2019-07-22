@@ -90,7 +90,7 @@ Take turns with your partner, following each other's directions as literally as 
 ## The Hardware
 
 * *Microcontroller* with additional electronics to make it easy to use
-* Many variants exist
+* Many variants exist - we'll look at some tomorrow
 * Designed to make it easy to control *inputs* and *outputs*
 ---
 # Blink!
@@ -160,6 +160,7 @@ void loop(){
   digitalWrite(ledPin, HIGH);
   // Tell ledPin to turn off/go to ground
   digitalWrite(ledPin, LOW);
+}
 ```
 +++
 Is it behaving as you'd expect? Why/why not?
@@ -186,7 +187,39 @@ void loop(){
   digitalWrite(ledPin, LOW);
   // wait 500 ms (half a second)
   delay(500);
+}
 ```
+---
+```
+// Declare and initialize a variable
+const int ledPin = 13;
+
+// Everything between {} will run once when the Arduino starts
+void setup(){
+  // Set ledPin (which is 13) to be an OUTPUT
+  pinMode(ledPin, OUTPUT);
+}
+
+// Everything betwen {} will run in a loop
+void loop(){
+  // Tell ledPin to turn on at full voltage
+  digitalWrite(ledPin, HIGH);
+  // wait 500 ms (half a second)
+  delay(500);
+  // Tell ledPin to turn off/go to ground
+  digitalWrite(ledPin, LOW);
+  // wait 500 ms (half a second)
+  delay(500);
+}
+```
+@[1, 4, 6, 10, 12, 14, 16, 18]
+@[5-8]
+@[11-20]
+@[2]
+@[7]
+@[13, 17]
+@[15, 19]
+
 ---
 ## Hack it!
 
