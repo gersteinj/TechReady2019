@@ -66,7 +66,12 @@ Send a value from 0 (off) to 255 (full power) to *special* digital pins. Acts li
 
 Wire up an LED to Digital Pin 3 on the Arduino. Turn it to full brightness, partial brightness, and off in a repeating pattern
 
-Challenge yourself: Try hooking up an RGB LED (the one with 4 legs). The long leg goes to GND, and the other three legs get hooked up to digital I/O. Can you show all the colors of the rainbow?
+If you wanted it to blink randomly (either brightness or speed), what would you need to know how to do?
+---
+## Reference
+
+Look at the [random()](https://www.arduino.cc/reference/en/language/functions/random-numbers/random/) function. What does it do? How could we use it in our blink code?
+
 ---
 # Circuits
 +++?image=assets/img/Day02/highway.png&size=contain
