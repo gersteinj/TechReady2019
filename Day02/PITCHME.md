@@ -111,6 +111,8 @@ Measure of how much the circuit impedes the flow of energy
 @snap[south-east text-right]
 Splits voltage. Used for many purposes, including checking varying resistance values
 @snapend
+---?code=assets/src/serialmonitor.ino
+
 ---
 ## Try It
 
