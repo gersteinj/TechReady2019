@@ -1,0 +1,22 @@
+set daynight to night
+
+
+setup
+
+
+
+
+
+
+loop
+
+check how many milliseconds have passed
+if the remainder when dividing milliseconds by length of day/night is 0:
+	if daynight is night:
+		set daynight to day
+	else:
+		set daynight to night
+	if daynight is night:
+		turn off LEDs
+	else:
+		turn on LEDs
